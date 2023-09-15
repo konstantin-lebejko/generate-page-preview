@@ -1,6 +1,9 @@
+'use client';
+
 import Image from "next/image";
 import { Card } from "ui";
 import styles from "./page.module.css";
+import { Button } from "antd";
 
 function Gradient({
   conic,
@@ -56,6 +59,7 @@ export default function Page(): JSX.Element {
         <p>
           examples/basic&nbsp;
           <code className={styles.code}>web</code>
+          <Button type="primary">Button</Button>
         </p>
         <div>
           <a
@@ -130,6 +134,7 @@ export default function Page(): JSX.Element {
             {description}
           </Card>
         ))}
+        
       </div>
     </main>
   );
